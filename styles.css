@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* To hide any overflowing content */
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* To contain the fireworks within the container */
+}
+
+h1 {
+    color: #ff6b6b;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#yesButton {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+button#noButton {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+p#response {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+p#quotation {
+    font-size: 22px;
+    color: #ff6b6b;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#fireworksCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Allow clicks to pass through the canvas */
+    z-index: 1000; /* Ensure the canvas is on top */
+}
